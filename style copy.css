@@ -1,0 +1,484 @@
+:root {
+    --color-primary: #ff7b02;
+    /* GREEN THEME */
+    --color-primary: #ff7b02;
+    --color-primary-variant: #ff7b02;
+    --color-bg-1: #000e17;
+    --color-bg-2: #001e2d;
+    --color-bg-3: #127341;
+    --color-bg-4: #003347;
+    --color-light: #85a2b2;
+    --color-white: hsl(0, 0%, 90%);
+
+    --container-width-lg: 88%;
+    --container-width-md: 92%;
+
+    --transition: all 400ms ease;
+}
+
+* {
+   margin: 0rem;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Silkscreen';
+  background: var(--color-bg-3);
+  color: var(--color-white);
+  line-height: 1.7; 
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-white);
+  position: relative;
+  transition: var(--transition);
+  filter: blur(0.333px);
+}
+
+h1:hover {
+  font-size: 7.77rem;
+  color: var(--color-white);
+  position: relative;
+  -webkit-filter: blur(4px);
+  filter: blur(16px);
+  width: 100%;
+  z-index:3;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition); 
+}
+
+.clink:hover {
+  background-color: hotpink;
+  -webkit-filter: blur(4px);
+  filter: blur(1px);
+  width: 91%;
+  z-index:3;
+}
+
+br {
+  padding: 30rem;
+}
+
+
+a:hover {
+  color: wheat;
+  z-index:3;
+  -webkit-filter: blur(4px);
+  filter: blur(1px);
+  width: 91%;
+  z-index:3;
+}
+
+.logo__container:hover {
+  -webkit-filter: blur(4px);
+  filter: blur(1px);
+  width: 91%;
+  z-index:3;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  max-width: 2160px;
+}
+
+.container__countdown {
+  margin-top: 33px;
+  font-size: 7rem;
+  place-items: center;
+  margin-right: 83px;
+  margin-left: 49px;
+  position: fixed;
+  filter: blur(0.333px);
+}
+
+.h1__banner {
+  margin-top: 30px;
+  margin-left: 154px;
+  font-size: 665.99%;
+  font-weight: 100;
+  color: var(--color-white);
+}
+
+
+/* ============ NAV BAR STYLING ============ */
+
+nav {
+  height: 9rem;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  font-family:'Robot Mono', monospace ;
+}
+
+.logo__container {
+  padding-left: 40px; 
+  /* width: 20vw; */
+  gap: 9.1vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__container {
+  padding-left: 40px; 
+  /* width: 20vw; */
+  gap: 9.1vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__container a:hover {
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.10);
+  background-color: hotpink;
+  -webkit-filter: blur(4px);
+  filter: blur(1px);
+  z-index:3;
+}
+
+/* FOR MOBILE (TABLETS AND PHONES) */
+.nav__toggle-btn {
+  display: none;
+}
+
+/* .nav__logo {
+  width: 1rem;
+} */
+
+.nav__links {
+  display: flex;
+  gap: 10em;
+  margin-left: flex;
+}
+
+.nav__socials {
+  display: relative;
+  gap: 3rem;
+  /* margin-right: -150px; */
+}
+
+.nav__socials a {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 0.5rem;
+  color: var(--color-bg-4);
+  display: grid;
+  place-items: center;
+}
+
+.nav__socials a:hover {
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.10);
+  color: var(--color-primary);
+  -webkit-filter: blur(4px);
+  filter: blur(1px);
+  z-index:3;
+}
+
+/* ============ ABOUT SECTION =============== */
+
+.about {
+  margin-top: 69px;
+  /* margin-left: 200px; */
+  place-items: center;
+}
+
+.about__container{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  margin:auto;
+  top: 50%;
+  margin-top: -150px;
+}
+
+.about__image-lg {
+  margin-top: 1px;
+  margin-left: 2rem;
+  padding-left: 8rem;
+  padding-bottom: 3rem;
+  justify-content: left;
+  position: absolute;
+  z-index: 11;
+  opacity: 69%;
+  -webkit-filter: drop-shadow(2px 2px 2px rgb(15, 15, 15));
+  filter: drop-shadow(1px 1px 1px rgb(15, 15, 15));
+}
+
+.about__image-lg:hover {
+    -webkit-filter: blur(4px);
+    filter: blur(3.9px);
+    z-index:0;
+    opacity: 81%;
+}
+
+/* .about__p {
+  font-family:'Robot Mono', monospace;
+  text-rendering: geometricPrecision;
+  position: relative;
+  color: var(--color-bg-1);
+  justify-content: left;
+  width: 49%;
+  opacity: 90%;
+  overflow: visible;
+  margin-top: 1px;
+  margin-left: 15rem;
+  z-index: 10;
+  padding: 43px;
+  padding-left: 8rem;
+} */
+
+.about__p {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+
+.about__p:hover {
+  color: black;
+  background-color: a8ebc3;
+  -webkit-filter: blur(2.25px);
+  filter: blur(0.33px);
+  -webkit-filter: drop-shadow(2px 2px 2px rgb(15, 15, 15));
+  filter: drop-shadow(1px 1px 1px rgb(15, 15, 15));
+  opacity: 90%;
+  z-index:11;
+}
+
+.about__container__countdown {
+  margin-top: 33px;
+  z-index:-1;
+  font-size: 7rem;
+  place-items: center;
+  margin-right: 83px;
+  margin-left: 49px;
+  position: fixed;
+  filter: blur(0.333px);
+}
+
+
+
+/* =========== FILM SECTION =========== */
+
+.film-grid {
+  /* height: 9rem; */
+  /* width: 70vw; */
+  margin-left: 90px;
+  top: 36px;
+  display: flex;
+  position: relative;
+  gap: 9rem;
+  bottom: 121px;
+}
+
+.film__image-109x169 {
+  margin-top: 79px;
+  justify-content: left;
+  -webkit-filter: drop-shadow(2px 2px 2px rgb(15, 15, 15));
+  filter: drop-shadow(1px 1px 1px rgb(15, 15, 15));
+  display: grid;
+}
+
+.film__image-109x169:hover {
+  -webkit-filter: blur(4px);
+  filter: blur(3px);
+  z-index:3;
+}
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  font-family: 'Robot Mono', monospace;
+  /* background-color: 100px; */
+  font-size: 16px;
+  content: attr(data-hover);
+  justify-content: left;
+  margin-left: 99px;
+  /* margin-top: 36px; */
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* =========== DIGITAL/PHONE CAMERA SECTION =========== */
+
+.digital_grid {
+  top: 36px;
+  display: flex;
+  position: relative;
+  /* gap: 10rem; */
+  bottom: 121px;
+}
+
+.phone__camera {
+  /* width: 666px; */
+  overflow: visible;
+}
+
+.digital__image-314x666 {
+  margin-top: 79px;
+  margin-left: 27px;
+  /* justify-content: left; */
+  -webkit-filter: drop-shadow(2px 2px 2px rgb(15, 15, 15));
+  filter: drop-shadow(1px 1px 1px rgb(15, 15, 15));
+  display: grid;
+  /* z-index: -100; */
+  width: 15px;
+}
+
+.digital__image-314x666:hover {
+  -webkit-filter: blur(4px);
+  filter: blur(2.5px);
+  z-index:3;
+}
+
+
+
+/* =========== GRAPHICS SECTION =========== */
+
+.graphics_grid {
+  top: 36px;
+  display: flex;
+  position: relative;
+  /* gap: 10rem; */
+  bottom: 121px;
+}
+
+.oz-wheel {
+  /* width: 666px; */
+  overflow: visible;
+}
+
+.graphics__image-444x420 {
+  margin-top: 79px;
+  margin-left: 20px;
+  /* justify-content: left; */
+  -webkit-filter: drop-shadow(2px 2px 2px rgb(15, 15, 15));
+  filter: drop-shadow(1px 1px 1px rgb(15, 15, 15));
+  display: grid;
+  /* z-index: -100; */
+  width: 333px;
+}
+
+.graphics__image-444x420:hover {
+  -webkit-filter: blur(4px);
+  filter: blur(2.5px);
+  z-index:3;
+}
+
+
+
+/* =========== DROPDOWN WORK MENU =========== */
+
+ /* Dropdown Button */
+ .dropbtn {
+  color: wheat;
+  text-emphasis-color: wheat;
+  font-size: 16px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropbtn {
+  background-color: #127341;
+  opacity: 100%;
+  color: #ff7b02;
+  /* text-emphasis-color: wheat; */
+}
+
+.dropbtn:hover {
+  color: wheat;
+  background-color: hotpink;
+  width: 110%;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.10);
+  -webkit-filter: blur(4px);
+  filter: blur(1px);
+  z-index:3;
+}
+
+.dropdown {
+  color: wheat;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 8px;
+  /* text-decoration: none; */
+  display: block;  
+}
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color: #ddd;} */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* background-color: hotpink; */
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;}  */
+
+
+/* NOISE */

@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+  <!-- ICONSCOUT CDN  -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- CUSTOM STYLESHEET -->
+  <link rel="stylesheet" href="index.css">
+  <title>Dom Bui</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JKBXP5QPBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JKBXP5QPBW');
+</script>
+<body>
+<!-- <h1 class="h1__banner">DOM BUI</h1>   -->
+<nav class="nav__1">    <div class="container logo__container">      
+  <a href="index.html" class="nav__logo"><img src="./images/bs-195.png" alt="Nav Logo"></a>
+</div></nav>
+<nav class="nav__3 h1__banner">DB<div class="container logo__container">      
+
+</div></nav>
+<nav class="nav__2">
+    <div class="container nav__container">
+        <div class="dropdown">
+          <button class="dropbtn">Work</button>
+          <div class="dropdown-content">
+            <a href="film.html">Film</a>
+            <a href="digital.html">Digital</a>
+            <a href="graphics.html">Graphics</a>
+            <a href="merch.html">Merch</a>
+            <a href="web-design.html">Web/Apps</a>
+            <a href="projects.html">Projects</a>
+            <a href="archive.html">Archive</a>
+          </div>
+        </div> 
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tdombui@gmail.com" target="_blank">Contact</a></li>
+      </ul>
+      
+      <ul class="nav__socials">
+        <li><a href="http://instagram.com/doms_labyrinth" target="_blank"><img src="./images/instagram.png" alt="Instagram Icon"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container container__countdown"><!-- Display the countdown timer in an element -->
+      <p id="demo"></p>
+      
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Nov 11, 2022 11:11:11").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+      
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+      
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+      
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 0);
+      </script></div>
+<br>
+
+
+<section id="graphics">
+  <div class="graphics-grid">
+    <li>
+      <div class="container oz-wheel">
+        <div class="graphics__image-444x420">
+          <img src="./images/graphics/oz_logo_420.png" alt="OZ DOM wheel">
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="container oz-spinning">
+        <div class="graphics__image-333">
+          <img src="./images/graphics/dom_oz-225.gif" alt="OZ spinning">
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="row">
+        <div class="container little-tree">
+          <div class="graphics__image-lt_333x487">
+            <img src="./images/graphics/little_tree.png" alt="liltree">
+          </div>
+        </div>
+        </li>
+        <li>
+          <div class="container cone28">
+            <div class="graphics__image-cone28">
+              <img src="./images/graphics/cone28.png" alt="cone28g">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card card-carabiner300">
+            <div class="carabiner300">
+              <img src="./images/graphics/carabiner300.png" alt="carabiner300">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container cup__dreambig">
+            <div class="graphics__image-cup">
+              <img src="./images/graphics/cup_dreambig.png" alt="Cup Dream Big">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container column__fire">
+            <div class="graphics__column__fire">
+              <img src="./images/graphics/column-fire.png" alt="Column Fire">
+            </div>
+          </div>
+        </li>
+
+<br>
+<footer class="container__footer">
+  <a class="footer1">© 2022 dombui.com</a>
+</footer>
+
+  <script src="main.js"></script>                                                     
+</body>
+</html>
