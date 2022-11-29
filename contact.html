@@ -21,21 +21,31 @@ MMMMMMN0o;......................;o0WMMMMMMMMMMMMN0o;......................;o0WMM
 MMMMMMMMWN0dl;'............';ld0NWMMMMMMMMMMMMMMMMWN0dl;'............';ld0NWMMMMMMMM
 MMMMMMMMMMMMWX0xoc:;;;;:cox0XWMMMMMMMMMMMMMMMMMMMMMMMMWX0xoc:;;;;:cox0XWMMMMMMMMMMMM
 -->
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <!-- FONT -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     </style>
+  
   <!-- ICONSCOUT CDN  -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+ 
   <!-- CUSTOM STYLESHEET -->
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+  <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+ 
   <title>Dom Bui</title>
 </head>
 
@@ -47,82 +57,38 @@ MMMMMMMMMMMMWX0xoc:;;;;:cox0XWMMMMMMMMMMMMMMMMMMMMMMMMWX0xoc:;;;;:cox0XWMMMMMMMM
   gtag('js', new Date());
   gtag('config', 'G-JKBXP5QPBW');
 </script>
+
 <body>
-
-<nav class="nav__1">    <div class="container logo__container">      
+<!-- <nav class="nav__1">    <div class="logo__container">      
   <a href="index.html" class="nav__logo"><img src="./images/bs-195.png" alt="Nav Logo"></a>
-</div></nav>
-<nav class="nav__3 h1__banner">DB<div class="container logo__container">      
-
-</div></nav>
-<nav class="nav__2">
-    <div class="container nav__container">
-        <div class="dropdown">
-          <button class="dropbtn">Work</button>
-          <div class="dropdown-content">
-            <a href="film.html">Film</a>
-            <a href="digital.html">Digital</a>
-            <a href="graphics.html">Graphics</a>
-            <a href="merch.html">Merch</a>
-            <a href="web-design.html">Web/Apps</a>
-            <a href="projects.html">Projects</a>
-            <a href="archive.html">Archive</a>
-          </div>
-        </div> 
-        <li><a href="about.html">About</a></li>
-        <li><a href="https://dombui.com/contact.html" target="_blank">Contact</a></li>
-      </ul>
-      
-      <ul class="nav__socials">
-        <li><a href="http://instagram.com/doms_labyrinth" target="_blank"><img src="./images/instagram.png" alt="Instagram Icon"></a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!--COUNTUP CONTAINER-->
-  <div class="container container__countup">
-    <p id="countup"></p>
+</div></nav> -->
+<a href="javascript:history.back()" class="backlink">← Back</a>
+<!-- <a href="https://dombui.com" class="backlink">←</a> -->
+  <div class="container">
+    <form class="contact__form" action="https://formsubmit.co/hello@dombui.com" enctype="multipart/form-data" method="POST">
+        <p class="get__in__touch">Get in touch 👋</p>
+        <input type="text" class="input input-name" name="name" placeholder="Name" required>
+        <input type="email" class="input input-email" name="email" placeholder="Email" required>
+        <input type="text" class="input input-phone" name="phone" id="phone" placeholder="Phone number" maxlength="17">
+        <textarea class="input input-body form-control" name="message" rows="10" placeholder="Hello..." required></textarea>
+        <input type="file" class="input input-attachment" name="attachment" accept="image/*, .pdf">
+        <!-- Hidden -->
+        <input type="hidden" name="_subject" value="New inquiry (dombui.com)">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_cc" value="tdombui@gmail.com">
+        <input type="hidden" name="_next" value="https://dombui.com/contact-ty.html">
+        <button type="submit" class="button">Send</button>
+    </form>
   </div>
 <br>
-
-<section id="graphics">
-  <div class="graphics-grid">
-    <li>
-      <div class="container oz-wheel">
-        <div class="oz-wheel">
-          <img src="./images/graphics/oz_logo_420.png" class="img__png" alt="OZ DOM wheel">
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="row">
-        <div class="container little-tree">
-          <div class="graphics__image-lt_333x487">
-            <img src="./images/graphics/little_tree.png" class="img__png"  alt="liltree">
-          </div>
-        </div>
-        </li>
-        <li>
-          <div class="card card-carabiner300">
-            <div class="carabiner300">
-              <img src="./images/graphics/carabiner300.png" class="img__png"  alt="carabiner300">
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="card card-hoagie">
-            <div class="hoagie">
-              <img src="./images/graphics/hoagie.png" class="img__png"  alt="hoagie">
-            </div>
-          </div>
-        </li>
- 
- 
-
+<br class="break__space_10">
 <br>
-<footer class="container__footer">
-  <a class="footer__scroll">© 2022 dombui.com</a>
-</footer>
-<script src="z_countup.js"></script>
+<script>
+  const phoneInputField = document.querySelector("#phone");
+  const phoneInput = window.intlTelInput(phoneInputField, {
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
+</script>
 </body>
 </html>

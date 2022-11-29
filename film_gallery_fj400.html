@@ -11,6 +11,8 @@
     </style>
   <!-- ICONSCOUT CDN  -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link
+  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <!-- CUSTOM STYLESHEET -->
   <link rel="stylesheet" href="index.css">
   <title>Dom Bui</title>
@@ -22,6 +24,7 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'G-JKBXP5QPBW');
 </script>
 
@@ -33,6 +36,7 @@
 
 </div></nav>
 <nav class="nav__2">
+  
     <div class="container nav__container">
         <div class="dropdown">
           <button class="dropbtn">Work</button>
@@ -55,41 +59,48 @@
       </ul>
     </div>
   </nav>
-
-  <!--COUNTUP CONTAINER-->
-  <div class="container container__countup">
-    <p id="countup"></p>
-  </div>  
-<br>
-
-<section id="digital">
-<div class="row"></div>
-  <div class="column">
-      <div class="digital-grid">
-        <li>
-          <div class="container phone__camera">
-            <div class="phone" alt="digital__image-314x666">
-              <img src="./images/digital/cameras/pixel6-314x666.png" alt="Pixel6_314x666">
-            </div>
-          </div>
-        </li>
-        </div>
-      <li>
-        <div class="container phone__camera">
-          <div class="phone" alt="digital__image-314x666">
-            <img src="./images/digital/cameras/a71-314x666.png" alt="A71_314x666">
-          </div>
-        </div>
-      </li>
+  <br>
+  <!-- Swiper -->
+ <br> <section id="gallery">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/film/gallery/fj400_2022/kg400_ab_21_12_00.png"></div>
+        <div class="swiper-slide"><img src="./images/film/gallery/fj400_2022/kg400_ca_21_12_01.png"></div>
+        <div class="swiper-slide"><img src="./images/film/gallery/fj400_2022/kg400_ca_21_12_03.png"></div>
+        <div class="swiper-slide"><img src="./images/film/gallery/fj400_2022/kg400_ca_21_12_02.png"></div>
+        <div class="swiper-slide"><img src="./images/film/gallery/fj400_2022/kg400_co_22_05_00.png"></div>
+        <div class="swiper-slide"><img src="./images/film/gallery/fj400_2022/kg400_co_22_05_02.png"></div>
+        <div class="swiper-slide"><img src="./images/film/gallery/fj400_2022/kg400_es_22_06_00.png"></div>
+        <div class="swiper-slide"><img src="./images/film/gallery/fj400_2022/kg400_fr_22_05_00.png"></div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-  </div>
-</section>
-<br>
+  </section>
+  
+<a href="javascript:history.back()" class="backlink">←</a>
+<br> 
+<br> 
 <footer class="container__footer">
-  <a class="footer__scroll">© 2022 dombui.com</a>
+  <a class="footer1">© 2022 dombui.com</a>
 </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  <script src="z_countup.js"></script>
-</body>
-</html>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+  </html>
+

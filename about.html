@@ -1,5 +1,30 @@
+<!--
+MMMMMMMMMMWX0xol:;,,''',;:cox0XWMMMMMMMMMMMMMMMMMMMMWX0xol:;,,''',;:cox0XWMMMMMMMMMM
+MMMMMMMWKxc,..................,cxKWMMMMMMMMMMMMMMWKxc,..................,cxKWMMMMMMM
+MMMMMNOl,........................,lONMMMMMMMMMMNOl,........................,lONMMMMM
+MMMW0c'......;xk:........'dOl......'l0WMMMMMMW0c'......;xk:........'dOl......'l0WMMM
+MMNd'.......'kWWO;.......oNMXc.......,dNMMMMNd'.......'kWWO;.......oNMXc.......,dNMM
+MXo.........:KMMXl......,OWMWd.........oXMMXo.........:KMMXl......,OWMWd.........oXM
+Nd..........:KMMNl......,OMMWd..........dNNd..........:KMMNl......,OMMWd..........dN
+k,..........,0MMK:......'xWMNl..........,kk,..........,0MMK:......'xWMNl..........,k
+l............lXXd........:0Nk,...........ll............lXXd........:0Nk,...........l
+;.............;;..........,:'............:;.............;;..........,:'............:
+;...;oo:..........................:do;...;;...;oo:..........................:do;...;
+:...;xO:..........................;kx,...c:...;xO:..........................;kx,...c
+d....:kc..........................ck:....dd....:kc..........................ck:....d
+K:....cx:........................:xc....:KK:....cx:........................:xc....:K
+WO;....cxl'....................'lxc....;OWWO;....cxl'....................'lxc....;OW
+MWO:....,odl;................;ldl,....:OWMMWO:....,odl;................;ldl,....:OWM
+MMWKl'....,coolc:,'''''',;clooc'....'lKWMMMMWKl'....,coolc:,'''''',;clooc'....'lKWMM
+MMMMWOc'.....';cllllllllllc;'.....'cONMMMMMMMMWOc'.....';cllllllllllc;'.....'cONMMMM
+MMMMMMN0o;......................;o0WMMMMMMMMMMMMN0o;......................;o0WMMMMMM
+MMMMMMMMWN0dl;'............';ld0NWMMMMMMMMMMMMMMMMWN0dl;'............';ld0NWMMMMMMMM
+MMMMMMMMMMMMWX0xoc:;;;;:cox0XWMMMMMMMMMMMMMMMMMMMMMMMMWX0xoc:;;;;:cox0XWMMMMMMMMMMMM
+-->
+
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +40,17 @@
   <link rel="stylesheet" href="about.css">
   <title>Dom Bui</title>
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKBXP5QPBW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-JKBXP5QPBW');
 </script>
+
 <body>
-<!-- <h1 class="h1__banner">DOM BUI</h1>   -->
 <div class="nav nav__bar">
   <nav class="nav__1">    <div class="container logo__container">      
   <a href="index.html" class="nav__logo"><img src="./images/bs-195.png" alt="Nav Logo"></a>
@@ -49,7 +74,7 @@
           </div>
         </div> 
         <li><a href="about.html">About</a></li>
-        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tdombui@gmail.com" target="_blank">Contact</a></li>
+        <li><a href="https://dombui.com/contact.html" target="_blank">Contact</a></li>
       </ul>
       
       <ul class="nav__socials">
@@ -59,66 +84,37 @@
   </nav>
 </div>
 
-
-  <div class="container about__container__countdown"><!-- Display the countdown timer in an element -->
-    <p id="demo"></p>
-    
-    <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Nov 11, 2022 11:11:11").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 0);
-    </script></div>
+<!--COUNTUP CONTAINER-->
+<div class="container container__countup">
+  <p id="countup"></p>
+</div>
 
 <br>
   <section id="about">
     <div class="container about__container">
       <div class="about__left">
         <div class="about__image">
-          <!-- <div class="about__image-lg">
-            <a href="https://www.flickr.com/photos/angreen/8065611268/" target="blank" class="cest_moi"><img src="./images/about/cest_moi_0.png" alt="About Dominick Bui"></a>
-          </div> -->
           <div class="about__image-lg">
-            <a class="cest_moi"><img src="./images/about/cest_moi_0.png" alt="About Dominick Bui"></a>
+            <a class="cest_moi">
+              <img src="./images/about/cest_moi_0.png" class="img__cest__moi responsive">
+              <div class="about__image__bottom__right">
+                <a href="https://www.flickr.com/photos/angreen/8065611268/" target="_blank" class="clink-rj">Photo Credit</a>
+              </div>
+            </a>
           </div>
         </div>
       </div>
       <div class="about__right">
         <div class="about about__elem">
           <p class="about__p">
-            <br>Born in a suburb west of Philadelphia, raised in Southern California, and now residing in New York City — Dominick Bui is a photographer, writer, and designer of graphics and the Web. His work combines multiple genres ranging from lifestyle, portraiture, landscape, abstract, to photojournalism; and has been featured by Monster Children, VICE, Complex, and several other independent publications. 
+           Born in a suburb west of Philadelphia, raised in Southern California, and now residing in New York City — Dominick Bui is a multipurpose creator who focuses on photography, storytelling, designing graphics, and developing the Web. His photographic work incorporates several genres ranging from lifestyle, portraiture, landscape, abstract, and photojournalism; and has been featured by Monster Children, VICE, Complex, and a handful of other brands and independent publications. 
             <br>
-            <br>DB's style is heavily influenced by skateboarding, screen printing, Steinbeck, Moby Dick, techno, punk, shoegaze, rap music, Aphex Twin, Brutalism, computers, 90s Toyota, and the wilderness.
+            <br>DB's style and approach to life are heavily influenced by skateboarding, Steinbeck, Moby Dick, techno, punk, shoegaze, rap music, Aphex Twin, Brutalism, computers, 90s Toyota, outdoor living, and the wilderness.
             <br>
-            <br><a href="dombui.com" class="clink">dombui.com</a> is for selected works. Follow the casual day-to-day excursions <a href="http://instagram.com/doms_labyrinth" target="_blank" class="clink">@doms_labyrinth</a>. <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tdombui@gmail.com" target="_blank" class="clink">
+            <br><a href="dombui.com" class="clink">dombui.com</a> is for selected works. Follow the casual day-to-day excursions <a href="http://instagram.com/doms_labyrinth" target="_blank" class="clink">@doms_labyrinth</a>. <a href="https://dombui.com/contact.html" class="clink">
               <br>
 
-            <br>Get in contact</a>.               <br>
-            <br><a href="https://www.flickr.com/photos/angreen/8065611268/" target="_blank" class="clink-rj">Photo by Austin Green</a>
+            <br>Get in touch</a>.               <br>
             </p>
             <br>
 <br>
@@ -128,8 +124,9 @@
   </section>
 <br>
 <footer class="container__footer">
-  <a class="footer1">© 2022 dombui.com</a>
+  <!-- <a class="footer1">© 2022 dombui.com</a> -->
 </footer>
-  <script src="main.js"></script>                                                     
+  <script src="z_countup.js"></script>                     
 </body>
 </html>
+  

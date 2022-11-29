@@ -39,7 +39,7 @@
           </div>
         </div> 
         <li><a href="about.html">About</a></li>
-        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tdombui@gmail.com" target="_blank">Contact</a></li>
+        <li><a href="https://dombui.com/contact.html" target="_blank">Contact</a></li>
       </ul>
       
       <ul class="nav__socials">
@@ -48,139 +48,79 @@
     </div>
   </nav>
 
-  <div class="container container__countdown"><!-- Display the countdown timer in an element -->
-    <p id="demo"></p>
-    
-    <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Nov 11, 2022 11:11:11").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 0);
-    </script></div>
+  <!--COUNTUP CONTAINER-->
+  <div class="container container__countup">
+    <p id="countup"></p>
+  </div>
 <br>
 
 <div class="film-block"></div>
   <section id="film" alt="Row 1">
     <div class="film-grid">
       <li>
-        <div class="container film__roll">
+        <div class="container film__roll__container">
           <div class="film__image-109x169">
-            <a href="film_gallery_kp400_1.html"><img src="./images/portra_400_109x169.png" alt="Portra_400_109x169">
-              <p class="description">Q3 Sep<br>2021-9</p>
-              <p class="location">France</p>
+            <a href="film_gallery_kp400_1.html"><img src="./images/portra_400_109x169.png" class="film__roll">
+              <p class="hover__p description">2021 Q3<br>Sept</p>
+              <p class="hover__p location">FR</p>
             </a>
           </div>
       </li>
       <li>
-        <div class="container film__roll">
+        <div class="container film__roll__container">
           <div class="film__image-109x169">
-            <a href="film_gallery_kg400_1.html"><img src="./images/kodak_gold_400_109x169.png" alt="Kodak_Gold_400_109x169">
-            <p class="description">Q3 Sep<br>2021-9</p>
-            <p class="location">France</p>
+            <a href="film_gallery_kg400_1.html"><img src="./images/kodak_gold_400_109x169.png" class="film__roll">
+            <p class="hover__p description">2021 Q3<br>Sept</p>
+            <p class="hover__p location" alt="France">FR</p>
           </a>
           </div>
       </li>
       <li>
-        <div class="container film__roll">
+        <div class="container film__roll__container">
           <div class="film__image-109x169">
-            <a href="film_gallery_kg400_1.html"><img src="./images/fuji_extra_400_109x169.png" alt="Fuji_Extra_400_109x169">
-            <p class="description">Q4 Dec<br>2021-12</p>
-            <p class="location">California</p>
+            <a href="film_gallery_fj400.html"><img src="./images/fuji_extra_400_109x169.png" class="film__roll">
+            <p class="hover__p description">2021 Q4<br>Dec</p>
+            <p class="hover__p location" alt="California">US, ES, CO</p>
           </a>
         </div>
       </li>
     </div>
   </section>
-  <section id="film" alt="Row 2">
+  <!-- <section id="film" alt="Row 2">
     <div class="film-grid">
       <li>
-        <div class="container film__roll">
+        <div class="container film__roll__container">
           <div class="film__image-109x169">
-            <img src="./images/fuji_extra_400_109x169.png" alt="Fuji_Extra_400_109x169">
-            <p class="description">Q2 May<br>2022-05</p>
-            <p class="location">Colombia</p>
+            <img src="./images/fuji_extra_400_109x169.png" class="film__roll">
+            <p class="hover__p description">2022 Q2<br>May</p>
+            <p class="hover__p location">Bogotá</p>
         </div>
       </li>
       <li>
-        <div class="container film__roll">
+        <div class="container film__roll__container">
           <div class="film__image-109x169">
-            <img src="./images/portra_400_109x169.png" alt="Portra_400_109x169">
-            <p class="description">Q2 Jun<br>2022-06</p>
-            <p class="location">California</p>
+            <img src="./images/portra_400_109x169.png" class="film__roll">
+            <p class="hover__p description">2022 Q2<br>June</p>
+            <p class="hover__p location">California</p>
         </div>
       </li>
       <li>
-        <div class="container film__roll">
+        <div class="container film__roll__container">
           <div class="film__image-109x169">
-            <img src="./images/kodak_gold_400_109x169.png" alt="Kodak_Gold_400_109x169">
-            <p class="description">Q2 Jun<br>2022-06</p>
-            <p class="location">Spain</p>
+            <img src="./images/kodak_gold_400_109x169.png" class="film__roll">
+            <p class="hover__p description">2022 Q2<br>June</p>
+            <p class="hover__p location">Spain</p>
           </div>
       </li>
       </div>
     </div>
-  </section>
-  <section id="film" alt="Row 3">
-    <div class="film-grid">
-      <li>
-        <div class="container film__roll">
-          <div class="film__image-109x169">
-            <img src="./images/kodak_gold_400_109x169.png"
-            alt="Kodak_Gold_400_109x169">
-          <p class="description">Q2 Jun <br>2022-06</p>
-          <p class="location">France</p>
-          </div>
-      </li>
-      <li>
-        <div class="container film__roll">
-          <div class="film__image-109x169">
-            <img src="./images/fuji_extra_400_109x169.png" alt="Fuji_Extra_400_109x169">
-            <p class="description">Q3 Sep <br>2022-09</p>
-            <p class="location">California</p>
-        </div>
-      </li>
-      <li>
-        <div class="container film__roll">
-          <div class="film__image-109x169">
-            <img src="./images/portra_400_109x169.png" alt="Portra_400_109x169">
-            <p class="description">Q3 Oct  <br>2022-10</p>
-            <p class="location">NYC</p>
-        </div>
-      </li>
-      </div>
-    </div>
-  </section>
+  </section> -->
 </div>
 
 <br>
 <footer class="footer">
   <a class="footer1">© 2022 dombui.com</a>
 </footer>
-
-<script src="main.js"></script>                                                     
+<script src="z_countup.js"></script>                                                     
 </body>
 </html>

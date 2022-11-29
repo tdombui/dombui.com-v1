@@ -15,17 +15,17 @@
   <link rel="stylesheet" href="web-design.css">
   <title>Dom Bui</title>
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKBXP5QPBW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-JKBXP5QPBW');
 </script>
+
 <body>
-<!-- <h1 class="h1__banner">DOM BUI</h1>   -->
 <nav class="nav__1">    <div class="container logo__container">      
   <a href="index.html" class="nav__logo"><img src="./images/bs-195.png" alt="Nav Logo"></a>
 </div></nav>
@@ -34,54 +34,24 @@
 </div></nav>
 <nav class="nav__2">
   <div class="container nav__container">
-    <div class="dropdown work__btn">
-      <button class="dropbtn">Work</button>
-      <div class="dropdown-content">
-        <a href="film.html">Film</a>
-        <a href="digital.html">Digital</a>
-        <a href="graphics.html">Graphics</a>
-        <a href="merch.html">Merch</a>
-        <a href="web-design.html">Web/Apps</a>
-        <a href="projects.html">Projects</a>
-        <a href="archive.html">Archive</a>
-      </div>
-    </div> 
-  </div>
-</nav>
-
-    <div class="container container__countdown"><!-- Display the countdown timer in an element -->
-      <p id="demo"></p>
-      
-      <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Nov 11, 2022 11:11:11").getTime();
-      
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-      
-        // Get today's date and time
-        var now = new Date().getTime();
-      
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-      
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-        // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-      
-        // If the count down is finished, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 0);
-      </script></div>
+      <div class="dropdown">
+        <button class="dropbtn">Work</button>
+        <div class="dropdown-content">
+          <a href="film.html">Film</a>
+          <a href="digital.html">Digital</a>
+          <a href="graphics.html">Graphics</a>
+          <a href="merch.html">Merch</a>
+          <a href="web-design.html">Web/Apps</a>
+          <a href="projects.html">Projects</a>
+          <a href="archive.html">Archive</a>
+        </div>
+      </div> 
+    </div>
+  </nav>
+<!--COUNTUP CONTAINER-->
+<div class="container container__countup">
+  <p id="countup"></p>
+</div>  
 <br>
 
 <br class="break__space_10">
@@ -91,7 +61,7 @@
       <div class="card card_app_1">
           <div class="container app__grid">
             <div class="app__icon">
-              <img src="./images/apps/bagapp/bagapp_backapp.png" alt="BagApp">
+              <img src="./images/apps/bagapp/bagapp_backapp.png" class="app__png">
               <span class="app__description"><code class="code_span code__app__name">AppPack</code>     The Backpacker's App</span>
             </div>
             <span class="app__blurb">
@@ -107,13 +77,13 @@
           <div class="container app__grid">
             <div class="app__left">
               <div class="app__icon">
-                <img src="./images/apps/imei/imei_checker.png" alt="IMEIer">
+                <img src="./images/apps/imei/imei_checker.png" class="app__png">
                 <span class="app__description"><code class="code_span">IMEIer</code>     The IMEI Check App</span>
               </div>
             </div>
           <div class="app__right">
               <div class="app__blurb">
-                <p>IMEIer is a web app that lets you check the IMEI of any mobile device.
+                <p class="p__blurb">IMEIer is a web app that lets you check the IMEI of any mobile device.
                 </p>
               </div>
             </div>
@@ -129,6 +99,6 @@
   <a class="footer__projects">© 2022 dombui.com</a>
 </footer>
 
-  <script src="main.js"></script>                                                     
+  <script src="z_countup.js"></script>
 </body>
 </html>

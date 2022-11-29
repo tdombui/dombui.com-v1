@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="index.css">
   <title>Dom Bui</title>
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKBXP5QPBW"></script>
 <script>
@@ -24,8 +25,8 @@
 
   gtag('config', 'G-JKBXP5QPBW');
 </script>
+
 <body>
-<!-- <h1 class="h1__banner">DOM BUI</h1>   -->
 <nav class="nav__1">    <div class="container logo__container">      
   <a href="index.html" class="nav__logo"><img src="./images/bs-195.png" alt="Nav Logo"></a>
 </div></nav>
@@ -47,7 +48,7 @@
           </div>
         </div> 
         <li><a href="about.html">About</a></li>
-        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tdombui@gmail.com" target="_blank">Contact</a></li>
+        <li><a href="https://dombui.com/contact" target="_blank">Contact</a></li>
       </ul>
       
       <ul class="nav__socials">
@@ -56,43 +57,32 @@
     </div>
   </nav>
 
-    <div class="container container__countdown"><!-- Display the countdown timer in an element -->
-      <p id="demo"></p>
-      
-      <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Nov 11, 2022 11:11:11").getTime();
-      
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-      
-        // Get today's date and time
-        var now = new Date().getTime();
-      
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-      
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-        // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-      
-        // If the count down is finished, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 0);
-      </script></div>
+  <!--COUNTUP CONTAINER-->
+  <!-- <div class="container container__countup">
+    <p id="countup"></p>
+  </div> -->
+<br>
+
+
+<section class="under__construction">
+  <div class="uc__grid">
+      <div class="container cone28">
+        <div class="graphics__image-cone28">
+          <img src="./images/graphics/cone28.png" class="cone28png">
+          <div class="container uc__container">
+            <p class="horses">Hold your horses — <br>we're under construction.</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+
 <br>
 <footer class="container__footer">
   <a class="footer1">© 2022 dombui.com</a>
 </footer>
-  <script src="main.js"></script>                                                     
+  <script src="z_countup.js"></script>
 </body>
 </html>

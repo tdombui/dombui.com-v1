@@ -16,8 +16,18 @@
   <title>Dom Bui</title>
 </head>
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JKBXP5QPBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JKBXP5QPBW');
+</script>
+
 <body>
-  <!-- <h1 class="h1__banner">DOM BUI</h1>   -->
   <nav class="nav__1">    <div class="container logo__container">      
     <a href="index.html" class="nav__logo"><img src="./images/bs-195.png" alt="Nav Logo"></a>
   </div></nav>
@@ -39,7 +49,7 @@
             </div>
           </div> 
           <li><a href="about.html">About</a></li>
-          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tdombui@gmail.com" target="_blank">Contact</a></li>
+          <li><a href="https://dombui.com/contact.html" target="_blank">Contact</a></li>
         </ul>
         
         <ul class="nav__socials">
@@ -48,157 +58,125 @@
       </div>
     </nav>
 
-      <div class="container container__countdown"><!-- Display the countdown timer in an element -->
-        <p id="demo"></p>
-        
-        <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Nov 11, 2022 11:11:11").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-          // Get today's date and time
-          var now = new Date().getTime();
-        
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-        
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-          // Display the result in the element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-        
-          // If the count down is finished, write some text
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 0);
-        </script></div>
+    <!--COUNTUP CONTAINER-->
+    <div class="container container__countup">
+      <p id="countup"></p>
+    </div>
+
     <br>
     <section id="tees">
       <div class="tee-grid">
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image">
-              <img src="./images/merch/internet_tee_wht.png" alt="♡ Internet Tee">
-              <span class="merch__description">5.3 OZ ♡ Internet Tee</span>
-              <span class="sizes">M, L</span>
-              <span class="price" alt="$35"></span>
+              <img src="./images/merch/internet_tee_wht.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz ♡ Internet Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image tee__image_2">
-              <img src="./images/merch/internet_tee_brn.png" alt="Internet Black">
-              <span class="merch__description">5.3 OZ ♡ Internet Tee</span>
-              <span class="sizes">M, L</span>
-              <span class="price" alt="$35"></span>
+              <img src="./images/merch/internet_tee_brn.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz ♡ Internet Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
       </div>
       <div class="tee-grid">
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image">
-              <img src="./images/merch/capaz_tee_wht.png" alt="Capaz Tee White">
-              <span class="merch__description">5.3 OZ Capaz NYC Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/capaz_tee_wht.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz Capaz NYC Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image tee__image_2">
-              <img src="./images/merch/capaz_tee_blk.png" alt="Capaz Tee Black">
-              <span class="merch__description">5.3 OZ Capaz NYC Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/capaz_tee_blk.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz Capaz NYC Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
       </div>
       <div class="tee-grid">
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image">
-              <img src="./images/merch/mvp_tee_wht.png" alt="MVP Tee White">
-              <span class="merch__description">5.3 OZ MVP Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/mvp_tee_wht.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz MVP Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image tee__image_2">
-              <img src="./images/merch/mvp_tee_grn.png" alt="MVP Tee Green">
-              <span class="merch__description">5.3 OZ MVP Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/mvp_tee_grn.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz MVP Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
       </div>
       <div class="tee-grid">
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image">
-              <img src="./images/merch/klf_tee_white.png" alt="Capaz Tee White">
-              <span class="merch__description">5.3 OZ KLF Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/klf_tee_white.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz KLF Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image tee__image_2">
-              <img src="./images/merch/klf_tee_blk.png" alt="Capaz Tee Black">
-              <span class="merch__description">5.3 OZ KLF Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/klf_tee_blk.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz KLF Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
       </div>
       <div class="tee-grid">
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image">
-              <img src="./images/merch/patanyc_tee_wht.png" alt="PataNYC Tee White">
-              <span class="merch__description">5.3 OZ PataNYC Tourist Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/patanyc_tee_wht.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz PataNYC Tourist Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image tee__image_2">
-              <img src="./images/merch/patanyc_tee_grn.png" alt="PataNYC Tee Black">
-              <span class="merch__description">5.3 OZ PataNYC Tourist Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/patanyc_tee_grn.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz PataNYC Tourist Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
       </div>
       <div class="tee-grid">
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image">
-              <img src="./images/merch/patanyc_tee_blk.png" alt="PataNYC Tee White">
-              <span class="merch__description">5.3 OZ PataNYC Tourist Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/patanyc_tee_blk.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz PataNYC Tourist Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
         <li>
-          <div class="container tee__grid">
+          <div class="container tee__grid__container">
             <div class="tee__image tee__image_2">
-              <img src="./images/merch/patanyc_tee_brn.png" alt="PataNYC Tee Black">
-              <span class="merch__description">5.3 OZ PataNYC Tourist Tee</span>
-              <span class="sizes">M, L</span>
+              <img src="./images/merch/patanyc_tee_brn.png" class="tee__shirt">
+              <span class="hover__p merch__description">5.3 oz PataNYC Tourist Tee</span>
+              <span class="hover__p sizes">M - L</span>
           </div>
         </li>
       </div>
       <br>
-  <div class="rotated">
     <footer class="container__footer">
-      <a class="footer__merch">© 2022 dombui.com</a>
-    </footer>
-  </div>         
-    <script src="main.js"><script>                                          
+      <a class="footer__scroll">© 2022 dombui.com</a>
+    </footer>   
+  <script src="z_countup.js"></script>
 </body>
 </html>
